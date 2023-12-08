@@ -1,45 +1,13 @@
-<h1>Guess the Number from 1 to 10</h1>
-<input id="num" type="text" onkeypress="check()">
-<button onclick=check()>Check</button>
-<p id="loads">Loading..</p>
-<h2>Score:<u id="score">0</u></h2>
-<h2>Total Chance:<u id="chance">10</u></h2>
-<script>
-    var num1=document.getElementById("num")
-    var load=document.getElementById("loads")
-    var scores=document.getElementById("score")
-    var chances=document.getElementById("chance")
-    var c=10
-    var s=0
-    function check()
-    {
-      load.textContent=num.value
-      /*if((c!=0) && (c>0)){
-        var val=num1.value
-        console.log(val)
-        var ran= Math.floor(Math.random()*10)+1
-        console.log(ran)
-        if(val==ran)
-        {
-            console.log("correct") 
-            load.textContent="Correct"
-            scores.textContent=++s
-            chances.textContent=--c
-            alert("You Won the Game")
-        }
-        else
-        {
-         load.textContent="Wrong"
-         chances.textContent=--c
-            //console.log("Incorrect")
-           //load.textContent="Incorrect"
-        }
-      }
-      else
-      {
-        alert("Your Chance is over")
-      }*/
-    }
-   // check()
-    </script> 
-    
+<h1 id="one" onclick="deletes(event)">One</h1>
+<h1 id="Two" onclick="deletes(event)">Two</h1>
+<h1 id="Three" onclick="deletes(event)">Three</h1>
+<h1 id="Four" onclick="deletes(event)">Four</h1>
+<h1 id="Five" onclick="deletes(event)">Five</h1> 
+
+<script>  
+ 
+  function deletes(event)
+  {
+   event.target.remove()
+  }
+</script>
